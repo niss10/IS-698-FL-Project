@@ -1,4 +1,4 @@
-# FedCollab: Federated Learning for Personalized Movie Recommendations
+# FedCollab: Federated Learning for Personalized Movie Recommendations with Privacy-Preserving
 
 ## Overview
 FedCollab is a final project for the IS 698/800 Federated Learning course, developed by Chaw Maung and Nisarg Patel. The project implements a privacy-preserving movie recommendation system using the MovieLens 1M dataset. It compares centralized machine learning (CML) with federated learning (FL) approaches, incorporating differential privacy (DP) to enhance user data security. The system leverages collaborative filtering with Singular Value Decomposition (SVD) and Multi-Layer Perceptron (MLP) models, achieving near-centralized performance while keeping user data local.
@@ -46,17 +46,17 @@ movies.dat: Movie metadata.
 
 
 **Implementation Files:**
-- fedcollab_centralize_svd.ipynb: Performs exploratory data analysis, preprocesses the MovieLens dataset, and implements centralized SVD-based collaborative filtering using the Surprise library.
-- fedcollab_cml_fl.ipynb: Implements centralized MLP training and federated learning with the RecommenderMLP model using PyTorch and Flower.
-- fedcollab_fl_all_features.ipynb: Extends FL to include all dataset features (e.g., genres, demographics) for improved performance.
-- fedcollab_fl_dp.ipynb: Implements FL with differential privacy, analyzing privacy-utility trade-offs.
-- fedcollab_fl_latest_flower_implementation.ipynb: Uses the latest Flower framework code for FL simulations.
-- fedcollab_fl_development.ipynb: Experimental file for testing and calculating precision/recall in FL.
+- **fedcollab_centralize_svd.ipynb:** Performs exploratory data analysis, preprocesses the MovieLens dataset, and implements centralized SVD-based collaborative filtering using the Surprise library.
+- **fedcollab_cml_fl.ipynb:** Implements centralized MLP training and federated learning with the RecommenderMLP model using PyTorch and Flower.
+- **fedcollab_fl_all_features.ipynb:** Extends FL to include all dataset features (e.g., genres, demographics) for improved performance.
+- **fedcollab_fl_dp.ipynb:** Implements FL with differential privacy, analyzing privacy-utility trade-offs.
+- **fedcollab_fl_latest_flower_implementation.ipynb:** Uses the latest Flower framework code for FL simulations.
+- **fedcollab_fl_development.ipynb:** Experimental file for testing and calculating precision/recall in FL.
 
 
 **Generated Files:**
-- preprocessed_dataset.csv: Preprocessed dataset combining ratings, users, and movies with multi-hot encoded genres and extracted years.
-- clients_<N>/: Directory containing per-client CSV files (e.g., user_1.csv) for FL simulations.
+- **preprocessed_dataset.csv:** Preprocessed dataset combining ratings, users, and movies with multi-hot encoded genres and extracted years.
+- **clients_<N>/:** Directory containing per-client CSV files (e.g., user_1.csv) for FL simulations.
 
 ## How to Run
 **Step 1: Preprocess the Dataset**
