@@ -61,7 +61,7 @@ movies.dat: Movie metadata.
 ## How to Run
 **Step 1: Preprocess the Dataset**
 
-- Open fedcollab_centralize_svd.py in Google Colab.
+- Open fedcollab_centralize_svd.ipynb in Google Colab.
 - Follow the instruction to install depenaciy and setup environment
 - Upload ratings.dat, users.dat, and movies.dat when prompted.
 - Run the notebook to:
@@ -72,7 +72,7 @@ movies.dat: Movie metadata.
 
 **Step 2: Run Centralized SVD**
 
-- Open fedcollab_centralize_svd.py in Google Colab.
+- Open fedcollab_centralize_svd.ipynb in Google Colab.
 - Follow the instruction to install depenaciy and setup environment
 - Ensure ratings.dat, users.dat, and movies.dat are uploaded.
 - Run the notebook to:
@@ -82,7 +82,7 @@ movies.dat: Movie metadata.
 
 **Step 3: Run Centralized MLP and Federated Learning**
 
-- Open fedcollab_cml_fl.py in Google Colab.
+- Open fedcollab_cml_fl.ipynb in Google Colab.
 - Follow the instruction to install depenaciy and setup environment
 - Upload preprocessed_dataset.csv when prompted.
 - Run the notebook to:
@@ -94,7 +94,7 @@ movies.dat: Movie metadata.
 
 **Step 4: Run FL with All Features**
 
-- Open fedcollab_fl_all_features.py in Google Colab.
+- Open fedcollab_fl_all_features.ipynb in Google Colab.
 - Follow the instruction to install depenaciy and setup environment
 - Upload preprocessed_dataset.csv.
 - Run the notebook to:
@@ -103,7 +103,7 @@ movies.dat: Movie metadata.
 
 **Step 5: Run FL with Differential Privacy**
 
-- Open fedcollab_fl_dp.py in Google Colab.
+- Open fedcollab_fl_dp.ipynb in Google Colab.
 - Upload preprocessed_dataset.csv.
 - Run the notebook to:
   - Train an FL model with DP (ε=1.0, δ=1e-5, clip norm=1.0).
@@ -112,11 +112,11 @@ movies.dat: Movie metadata.
 
 **Step 6: Explore Additional FL Implementations**
   **Implemented Latest code of flower**
-  - Latest Flower Implementation (fedcollab_fl_latest_flower_implementation.py):
+  - Latest Flower Implementation (fedcollab_fl_latest_flower_implementation.ipynb):
   - Run to test FL with the latest Flower framework code updates.
 
   **Precesion and Recall in FL setup**
-  - Development File (fedcollab_fl_development.py):
+  - Development File (fedcollab_fl_development.ipynb):
   - Run to experiment with precision/recall calculations for FL.
 
 
